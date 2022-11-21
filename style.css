@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* navigation menu */
+
+.menu-bar{
+    background: #FB91AC;
+    text-align: center;
+    
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+   
+    
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+.menu-bar ul li:hover{
+    background-color: #F3C8C5;
+    border-radius: 3px;
+    
+
+}
+
+.submenu{
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: #FB91AC;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+/*mobile responsive*/
+.toggle-button{
+    position: absolute;
+    top: 33px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+@media (max-width:650px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .menu-bar ul {
+        width: 100%;  
+    }
+
+    .menu-bar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-bar ul{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .menu-bar li{
+        text-align: center;
+    }
+
+    .menu-bar li a {
+        padding: 2px 0.5px;
+    }   
+}
+
+
+/*Home page*/
+p{
+    line-height: 2em;
+}
+
+
+fieldset {
+    text-align: center;
+    
+}
+
+
+.load{
+    animation: slide 1s;
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 60s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url(wedding-10.jpg);
+
+    }
+    20%{
+         background-image: url(wedding-2.jpg);
+    }
+    25%{
+         background-image: url(wedding-3.jpg);
+    }
+
+    40%{
+        background-image: url(wedding-1.jpg);
+
+    }
+    45%{
+         background-image: url(wedding-5.jpg);
+    }
+    60%{
+         background-image: url(wedding-6.jpg);
+    }
+
+    65%{
+        background-image: url(wedding-7.jpg);
+
+    }
+    80%{
+         background-image: url(wedding-8.jpg);
+    }
+    85%{
+         background-image: url(wedding-9.jpg);
+    }
+    100%{
+        background-image: url(wedding-11.jpg);
+    }
+
+}
+
+.home{
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+img{
+    width: 600px;
+    padding: 59px;
+  
+    
+}
+
+.home2{
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.images{
+    float: left;
+    width: 50%;
+    padding: 5px;
+   
+
+}
+
+
+
+.images #photo1{
+    width: 100%;   
+}
+.images #photo2{
+    width: 100%;
+}
+.images #photo3{
+    width: 100%;
+}
+.images #photo4{
+    width: 100%;
+}
+
+
+/* Contact page */
+
+#contact-form{
+    width: 40%;
+    float: right;   
+    padding-top: 100px; 
+    font-size: 1.3vw;
+    margin-right: 50px;
+    
+    
+}
+
+#contact-info{
+    width: 60%;
+    margin-left: 100px;
+    padding-top: 90px;
+    font-size: 1.3vw;   
+}
+
+/*cookies*/
+
+.cookies-card{
+    position: fixed;
+    bottom: 5em;
+    right: 2em;
+    width: 350px;
+    background-color: #9AD5DF;
+    padding: 1.5em;
+
+}
+
+.cookies-card *{
+    color: white;
+}
+
+.title{
+    font-size: 1.6em;
+    letter-spacing: 0.4px;
+    margin-bottom: 0.5em;
+}
+
+.info{
+    line-height: 1.4em;
+    letter-spacing: 0.4px;
+    margin-bottom: 2em;
+}
+
+.cta{
+    border: none;
+    outline: none;
+    padding: 0.8em 1.5em;;
+    background-color: #5599AA;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.cookies-card a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: #5599AA;
+}
+
+a.settings{
+    border-bottom: none;
+    margin-left: 1em;
+}
+
+
+/* Price page */
+#div1 {
+    width: 50%;
+    float: right;
+    padding-top: 35px;
+    font-size: 1.3vw;
+    
+        
+}
+
+#div2 {
+    width: 500%;
+    margin-left: 200px;
+    padding-top: 20px;  
+    font-size: 1.3vw;  
+}
+
+.booking{
+    color: #5599AA;
+    font-size: 20px;
+}
+
+.standards{
+    color: #5599AA;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* About page */
+.section-2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    margin: 10rem auto 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.about-photo #pic10{
+    width: 100%;
+    width: 534px;
+    
+    
+}
+
+
+
+.section-2 p{
+    margin-top: 40px;
+    margin-right: 15px;
+    font-size: 1.4vw;
+    
+}
+
+
+
+/*gallery - wedding*/
+.image{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/*first 3 images*/
+.image #pic1{
+    width: 100%;    
+}
+.image #pic2{
+    width: 100%;    
+}
+.image #pic3{
+    width: 100%;    
+}
+
+.wedding #pic11{
+    width: 100%;
+    width: 543px;
+}
+
+/*rest of the images*/
+.images #photo5{
+    width: 100%;    
+}
+.images #photo6{
+    width: 100%;    
+}
+.images #photo7{
+    width: 100%;    
+}
+.images #photo8{
+    width: 100%;    
+}
+.images #photo9{
+    width: 100%;    
+}
+.images #photo10{
+    width: 100%;    
+}
+.images #photo11{
+    width: 100%;    
+}
+
+/*gallery-family*/
+.image #pic4{
+    width: 100%;    
+}
+.image #pic5{
+    width: 100%;    
+}
+.image #pic6{
+    width: 100%;    
+}
+
+.family #pic12{
+    width: 100%;
+    width: 543px;
+    
+}
+
+.section p{
+    font-size: 19px;
+    
+}
+
+/*rest of the images*/
+.images #photo12{
+    width: 100%;    
+}
+.images #photo13{
+    width: 100%;    
+}
+.images #photo14{
+    width: 100%;    
+}
+.images #photo15{
+    width: 100%;    
+}
+.images #photo16{
+    width: 100%;    
+}
+.images #photo17{
+    width: 100%;    
+}
+.images #photo18{
+    width: 100%;    
+}
+.images #photo19{
+    width: 100%;    
+}
+.images #photo20{
+    width: 100%;    
+}
+
+/*gallery-people*/
+.image #pic7{
+    width: 100%;    
+}
+.image #pic8{
+    width: 100%;    
+}
+.image #pic9{
+    width: 100%;    
+}
+
+.people #pic13{
+    width: 100%;
+    width: 590px;
+
+
+}
+
+/*other Images*/
+.images #photo21{
+    width: 100%;    
+}
+.images #photo22{
+    width: 100%;    
+}
+.images #photo23{
+    width: 100%;    
+}
+.images #photo24{
+    width: 100%;    
+}
+.images #photo25{
+    width: 100%;    
+}
+.images #photo26{
+    width: 100%;    
+}
+.images #photo27{
+    width: 100%;    
+}
+
+
+.section{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    margin: 10rem auto 0 auto;
+  
+}
+
+.section p{
+    margin-top: 40px;
+    margin-right: 15px;
+    font-size: 1.3vw;
+}
+
+
+
+/* Footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF2A6;
+    color: #9AD5DF;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;  
+    height: 30px;
+    padding-top: 1.5px;
+}
+
+
+
+
+
+
+    
+  
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+    
